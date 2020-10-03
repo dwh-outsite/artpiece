@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DownloadArtPieceIdeaAttachmentController;
+use App\Http\Controllers\ListArtPieceIdeasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/ideas', ListArtPieceIdeasController::class)->name('ideas');
+    Route::get('/ideas/{idea}/download', DownloadArtPieceIdeaAttachmentController::class)->name('ideas.download');
+});
+
 Route::get('/{lang?}', function ($lang = 'nl') {
     App::setLocale($lang);
 
     return view('welcome');
 })->name('home');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
