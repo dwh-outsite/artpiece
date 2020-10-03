@@ -1,9 +1,9 @@
 <x-guest-layout>
     <div class="flex">
-        <div>
+        <div class="hidden md:block">
             @include('partials.grid')
         </div>
-        <div class="px-16">
+        <div class="px-6 md:px-16">
 
             <article class="py-16">
                 @include('partials.logo')
@@ -18,18 +18,18 @@
                 </p>
             </article>
 
-            <section class="border-l-4 border-art-purple p-8 shadow-2xl w-2/3 ">
+            <section class="border-l-4 border-art-purple p-8 shadow-2xl w-full md:w-2/3">
                 <h2 class="font-semibold text-3xl mb-8">
                     Stuur <span class="text-art-purple">jouw idee</span> voor een <span class="text-art-purple">kunstwerk</span> in!
                 </h2>
                 @livewire('art-piece-idea-form')
             </section>
 
-            <footer class="pt-16 pb-8 mt-8">
-                <div class="text-gray-400 uppercase text-sm tracking-wide mb-2">
+            <footer class="pt-16 pb-8 mt-8 text-center md:text-left">
+                <div class="text-gray-400 uppercase text-sm tracking-wide mb-4 md:mb-2">
                     {{ __('An LGBT+ artwork in Delft is an initiative of') }}
                 </div>
-                <div class="flex space-x-6 items-center">
+                <div class="flex flex-col md:flex-row space-x-6 space-y-4 items-center">
                     @include('partials.organisations')
                 </div>
             </footer>

@@ -1,6 +1,6 @@
 <div>
     @if ($completed)
-        {{ __('Thank you for submitting your idea.') }}
+        {{ __('Thank you for submitting your idea!') }}
     @else
         <form wire:submit.prevent="submit">
 
@@ -33,7 +33,7 @@
                     <label for="name" class="block text-gray-700 font-semibold mb-1">
                         {{ __('Attachment') }}
                     </label>
-                    <input wire:model="attachmentFile" type="file" class="rounded-lg p-4 shadow border" />
+                    <input wire:model="attachmentFile" type="file" class="rounded-lg p-4 shadow border w-full" />
                     @error('attachmentFile') <div class="text-red-500 mt-2">{{ $message }}</div> @enderror
                 </div>
             </div>

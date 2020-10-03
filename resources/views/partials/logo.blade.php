@@ -1,4 +1,4 @@
-<svg class="h-64 mb-16" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1056 416" xml:space="preserve">
+<svg class="w-full md:w-auto md:h-64 mb-16" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1056 416" xml:space="preserve">
     <style>
       .st-t0{fill:#444344}.st-t1{fill:#ce65a0}.st-t2{fill:#5c8dca}
     </style>
