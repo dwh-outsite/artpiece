@@ -1,21 +1,38 @@
 <x-guest-layout>
-    <div class="container mx-auto">
+    <div class="flex">
+        <div>
+            @include('partials.grid')
+        </div>
+        <div class="px-16">
 
-        <article>
-            <h1 class="text-4xl">Jouw kunstwerk in Delft?</h1>
+            <article class="py-16">
+                @include('partials.logo')
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare augue eget facilisis facilisis. Etiam ac volutpat ligula, non maximus neque. Aliquam pellentesque ex id maximus sodales. Curabitur et lacinia lectus, sed commodo mauris. Mauris vestibulum ultricies ultricies. Sed condimentum turpis libero, sit amet sodales libero sollicitudin ut. Proin ac rhoncus risus. Ut molestie neque leo, sed varius risus dictum et. Proin interdum, ex ac efficitur consectetur, felis lorem ullamcorper tellus, nec aliquam enim ipsum a eros. Nullam nisi nisi, aliquam a est at, porttitor dapibus nisi. Proin dolor erat, suscipit vel consectetur a, aliquet id leo. Fusce nec semper velit, at rutrum nunc. Maecenas molestie ligula urna, tempus congue diam euismod vel. Nam rutrum leo ante, sit amet hendrerit arcu condimentum vitae. Maecenas sagittis ultrices posuere.
+                <h1 class="text-4xl hidden">Jouw kunstwerk in Delft?</h1>
 
-                Phasellus eget facilisis nibh. Praesent tincidunt turpis in metus aliquam bibendum. Vivamus risus odio, consectetur in urna eget, dictum placerat diam. Vivamus sed lacus vel lectus condimentum vestibulum quis ac libero. Morbi egestas consequat maximus. Proin porta sapien quis sem lobortis, ut rhoncus lectus bibendum. Cras rhoncus, tortor ac tempus porta, felis augue gravida est, vitae consectetur metus mi iaculis eros. Morbi mollis non nisl a bibendum.
+                <p class="text-xl leading-relaxed">
+                    You’ve probably seen it - the rainbow coloured bridge next to Delft Station. A first visible symbol that Delft is a rainbow city, and has been for nearly 10 years. However, this bridge is only temporary. We want to create a more permanent LGBT+ monument which is more unique to Delft, and we want your help to think of what exactly!
+                    <br /><br />
+                    Between now and December 4th you can submit your idea for a statue or other standalone piece of art that represents the LGBT+ community. It can be just a description in words or a sketch, the winning idea will be given as part of the instructions to an artist.
+                    After the competition closes, a panel of representatives of the various LGBT+ organisations in Delft will decide on the winning idea, which will be announced on Purple Friday, December 11th, after which a fundraising campaign will start to fund it. If your idea wins, you can be part of the eventual reveal of the artwork and you will receive a small version of the artwork to take home.
+                </p>
+            </article>
 
-                Vivamus quis quam nec dolor cursus semper. Phasellus in hendrerit arcu. Vestibulum massa ligula, ultricies fringilla justo scelerisque, tempus tempus quam. Duis vel magna lectus. Proin interdum nulla in turpis accumsan facilisis. Proin pellentesque ipsum a massa faucibus dictum. Vivamus vehicula quam nec fermentum interdum. Proin tempus aliquet enim, at placerat erat ultricies quis. Donec et tempus ipsum.
-            </p>
-        </article>
+            <section class="border-l-4 border-art-purple p-8 shadow-2xl w-2/3 ">
+                <h2 class="font-semibold text-3xl mb-8">
+                    Stuur <span class="text-art-purple">jouw idee</span> voor een <span class="text-art-purple">kunstwerk</span> in!
+                </h2>
+                @livewire('art-piece-idea-form')
+            </section>
 
-        <hr />
-
-        @livewire('art-piece-idea-form')
-
+            <footer class="pt-16 pb-8 mt-8">
+                <div class="text-gray-400 uppercase text-sm tracking-wide mb-2">
+                    {{ __('An LGBT+ artwork in Delft is an initiative of') }}
+                </div>
+                <div class="flex space-x-4 items-center">
+                    @include('partials.organisations')
+                </div>
+            </footer>
+        </div>
     </div>
 </x-guest-layout>
