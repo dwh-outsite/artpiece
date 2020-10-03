@@ -29,7 +29,7 @@
                 <div class="text-gray-400 uppercase text-sm tracking-wide mb-2">
                     {{ __('An LGBT+ artwork in Delft is an initiative of') }}
                 </div>
-                <div class="flex space-x-4 items-center">
+                <div class="flex space-x-6 items-center">
                     @include('partials.organisations')
                 </div>
             </footer>
