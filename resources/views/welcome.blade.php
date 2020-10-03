@@ -35,8 +35,11 @@
                 <div class="text-gray-400 uppercase text-sm tracking-wide mb-4 md:mb-2">
                     {{ __('An LGBT+ artwork in Delft is an initiative of') }}
                 </div>
-                <div class="flex flex-col md:flex-row space-x-6 space-y-4 items-center">
+                <div class="flex flex-col md:flex-row space-x-6 space-y-4 items-center mb-16">
                     @include('partials.organisations')
+                </div>
+                <div class="text-gray-400 text-sm tracking-wide md:mb-2">
+                    &copy; {{ __(' DWH 2020 - Lange Geer 22, 2611PV Delft - info@dwhdelft.nl - 0637560270') }}
                 </div>
             </footer>
         </div>
