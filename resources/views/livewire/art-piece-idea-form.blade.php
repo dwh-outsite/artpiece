@@ -39,12 +39,7 @@
             </div>
 
             <div class="text-gray-400 text-sm">
-                {{ __('
-                    By submitting this form you allow DWH to save your information and to process it. Your information
-                    will only be used to pick ideas and for the possibility to get in touch with you. After the
-                    competition has finished, your data will be removed. If you have more questions, please contact us
-                    via the information below.
-                ') }}
+                @lang('messages.form.privacy')
             </div>
 
             <button class="bg-art-purple hover:bg-opacity-75 mt-4 py-2 px-4 font-bold rounded-full text-white" type="submit">
