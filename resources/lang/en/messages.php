@@ -11,5 +11,9 @@ return [
     'form' => [
         'title' => 'Submit <span class="text-art-purple">your idea</span> for an <span class="text-art-purple">artwork</span>!',
         'privacy' => 'By submitting this form you allow DWH to save your information and to process it. Your information will only be used to pick ideas and for the possibility to get in touch with you. After the project has been completed, your data will be removed. By submitting an idea you agree that you give us the right to use and the ownership of the idea. If you have more questions, please contact us via the information below.'
+    ],
+    'reveal' => [
+        'title' => 'Reveal <span class="text-art-purple">Artwork</span> Idea',
+        'description' => 'Watch the reveal of the artwork idea here on Purple Friday, <strong>11 December at 7pm</strong>.',
     ]
 ];

@@ -26,9 +26,9 @@
 
             <section class="border-l-4 border-art-purple p-8 shadow-2xl w-full md:w-2/3">
                 <h2 class="font-semibold text-3xl mb-8">
-                    @lang('messages.form.title')
+                    @lang('messages.reveal.title')
                 </h2>
-                @livewire('art-piece-idea-form')
+                @lang('messages.reveal.description')
             </section>
 
             <footer class="pt-16 pb-8 mt-8 text-center md:text-left">
