@@ -32,7 +32,7 @@
                     @lang('messages.reveal.description')
                 </p>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_ng0GHxROU0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1MB6GewnLl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
             <footer class="pt-16 pb-8 mt-8 text-center md:text-left">
